@@ -94,7 +94,21 @@ function randomNum50() {
 
 // console.log(serieA)
 
+let serieAfouls = []
+
 for (let i = 0; i < serieA.length; i++) {
 
-    console.log(i)
+    let currentElement = serieA[i]
+
+    currentElement.fouls = randomNum50()
+
+    currentElement.points = randomNum50()
+
+    delete currentElement.points
+
+    serieAfouls.push(currentElement)    
+
 }
+
+console.log(serieAfouls)
+

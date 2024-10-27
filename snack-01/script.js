@@ -55,5 +55,3 @@ for (let i = 0; i < bikesArray.length; i++) {
     
  }
 
-
- console.log(weightestBike)
