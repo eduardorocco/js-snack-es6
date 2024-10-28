@@ -104,11 +104,18 @@ for (let i = 0; i < serieA.length; i++) {
 
     currentElement.points = randomNum50()
 
-    delete currentElement.points
+    const teamFouls = {
 
-    serieAfouls.push(currentElement)    
+        name: currentElement.name,
+        
+        fouls: currentElement.fouls
+    }
+
+    serieAfouls.push(teamFouls)    
 
 }
 
 console.log(serieAfouls)
+
+console.log(serieA)
 
